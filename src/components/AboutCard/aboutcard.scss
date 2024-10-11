@@ -1,0 +1,89 @@
+.aboutCard-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  width: 100%;
+  margin-right: 20px;
+
+  .aboutCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    border: 1px solid #c1c1c1;
+    padding: 20px;
+    position: relative;
+    transition: 300ms;
+
+    @media(max-width:400px){
+      width: 85%;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    .arrowCircle {
+      position: absolute;
+      top: -3.8rem;
+      left: -2.5rem;
+      z-index: 4;
+      width: 30%;
+      transition: 300ms;
+      cursor: pointer;
+
+      @media (max-width: 1000px) {
+        display: none;
+      }
+
+      &:hover {
+        transform: scale(1.05);
+        rotate: -10deg;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+
+    h3 {
+      font-family: var(--font-family1);
+    }
+    .aboutCard-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-family: var(--font-family2);
+    }
+  }
+
+  .one {
+    background-color: var(--white);
+    color: var(--black);
+    z-index: 3;
+  }
+
+  .two {
+    background-color: var(--black);
+    color: var(--white);
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 15%;
+    width: 50%;
+
+    @media (max-width: 1000px) {
+      top: 0;
+      left: 0;
+      position: relative;
+    }
+    &:hover {
+      z-index: 4;
+    }
+  }
+}

@@ -1,0 +1,121 @@
+.modeling-container {
+  margin: 0 auto;
+  padding: 2rem 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/bigText.webp");
+  background-color: var(--black);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+
+  .modeling-title {
+    position: absolute;
+    font-family: var(--font-family1);
+    color: var(--white);
+    top: 0%;
+    left: 20%;
+    z-index: 2;
+
+    @media (max-width: 767px) {
+      top: 20%;
+      left: 10%;
+    }
+
+    @media (max-width: 327px) {
+      left: 5%;
+    }
+
+    h1 {
+      font-size: clamp(3.125rem, 1.9676rem + 6.1728vw, 9.375rem);
+    }
+
+    .modeling-titleOne {
+      margin-left: 3%;
+      width: max-content;
+    }
+
+    .modeling-titleTwo {
+      margin-left: 30%;
+
+      @media (max-width: 423px) {
+        margin-left: 10%;
+      }
+    }
+  }
+  .modeling-image-two {
+    position: relative;
+    width: 100%;
+  }
+
+  .model-photo {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    position: relative;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+  }
+
+  .modeling-arrowCircle {
+    position: absolute;
+    top: 8%;
+    right: 15%;
+    transition: 300ms;
+    width: 30%;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+      rotate: -10deg;
+    }
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  .rec.rec-arrow {
+    margin: 10px;
+    background-color: var(--white);
+    color: var(--black);
+    border: none;
+    outline: none;
+
+    &:hover{
+      background-color: var(--white);
+      color: var(--black);
+    }
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  .rec-carousel-item:focus {
+    background-color: var(--white);
+    color: var(--black);
+  }
+
+  .rec-carousel-pagination {
+    display: flex;
+    justify-content: center;
+  }
+
+  .rec-dot {
+    box-shadow: 0 0 1px 3px rgba(142, 142, 142, 0) !important;
+    width: 11px;
+    height: 11px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 99;
+  }
+
+  .rec-dot_active {
+    background-color: var(--white);
+    box-shadow: 0 0 1px 2px var(--white) !important;
+  }
+}

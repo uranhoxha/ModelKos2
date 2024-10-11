@@ -1,0 +1,127 @@
+.wpsayCard-container {
+  display: flex;
+  background-color: var(--white);
+  flex-direction: column;
+  width: 80%;
+  justify-content: space-between;
+  height: 80%;
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 2rem !important;
+  gap: 10rem;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+
+  .pagination-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    right: 3rem;
+    top: 0.5rem;
+    .pagination-dot{
+      width: 8px;
+      height: 8px;
+      background-color: #C9C9C9;
+      border-radius: 100%;
+    }
+
+    .pagination-active{
+      width: 10px;
+      height: 10px;
+      background-color: var(--black);
+    }
+
+  }
+
+  @media (max-width:1000px){
+    width: 90%;
+    height: 90%;
+  }
+
+  h1 {
+    color: var(--black);
+    font-family: var(--font-family1);
+  }
+
+  p {
+    font-family: var(--font-family2);
+    color: var(--black);
+  }
+
+  .wpsay-smallCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    padding: 20px;
+    position: relative;
+    z-index: 99 !important;
+    flex-wrap: wrap;
+
+    h3 {
+      font-family: var(--font-family1);
+      color: var(--black);
+    }
+
+    p {
+      font-family: var(--font-family2);
+      color: var(--black);
+    }
+
+    .rating {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      .dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        .dot {
+          width: 12px;
+          height: 12px;
+          background-color: #c1c1c1;
+          border-radius: 50%;
+        }
+
+        .active {
+          background-color: var(--black);
+        }
+      }
+    }
+  }
+
+  .background-dots {
+    content: url(../../assets/dots.svg);
+    height: 30%;
+    bottom: 15%;
+    left: 20%;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+
+    @media(max-width:1900px){
+        left: 15%;
+    }
+
+    @media(max-width:1685px){
+        left: 8%;
+    }
+
+    @media(max-width:1375px){
+        left: 0%;
+    }
+
+    @media(max-width:1000px){
+        display: none;
+    }
+
+    
+
+
+  }
+}

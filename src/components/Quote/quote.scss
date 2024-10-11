@@ -1,0 +1,40 @@
+.quote-container {
+  background-image: url(../../assets/background-image2.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 2rem !important;
+  padding-bottom: 4rem !important;
+
+  .quote-logo {
+    filter: invert(100%) sepia(92%) saturate(0%) hue-rotate(206deg)
+      brightness(109%) contrast(108%);
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .quote-text {
+    color: var(--white);
+    font-family: var(--font-family1);
+    margin-bottom: 5rem;
+    h1 {
+      font-size: clamp(1.875rem, 1.412rem + 2.4691vw, 4.375rem);
+    }
+    .second-text {
+      float: right;
+    }
+  }
+
+  .arrow-circle {
+    width: 9rem;
+    transition: 300ms;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+      rotate: -10deg;
+    }
+  }
+}

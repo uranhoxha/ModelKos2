@@ -1,0 +1,58 @@
+.modelsSlider-container {
+  position: relative;
+  .rec.rec-arrow {
+    background-color: var(--white);
+    color: var(--black);
+    border: none;
+    box-shadow: none;
+
+    &:hover {
+      background-color: var(--white);
+      color: var(--black);
+    }
+
+    &:focus {
+      background-color: var(--white);
+      color: var(--black);
+    }
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  .rec-carousel-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .rec-dot {
+    box-shadow: 0 0 1px 3px rgba(142, 142, 142, 0) !important;
+    width: 11px;
+    height: 11px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 99;
+  }
+
+  .rec-dot_active {
+    background-color: var(--black);
+    box-shadow: 0 0 1px 2px var(--black) !important;
+  }
+
+  .custom-arrow {
+    background-color: transparent;
+    font-size: 2.5rem;
+    height: max-content;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    color: var(--black);
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+}

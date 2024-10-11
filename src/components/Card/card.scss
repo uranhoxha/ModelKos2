@@ -1,0 +1,95 @@
+.card-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #c1c1c1;
+  background-color: var(--white);
+  margin-right: 20px;
+  transition: 300ms;
+  cursor: pointer;
+  overflow: hidden;
+  margin-bottom: 2.5rem;
+  width: 100%px;
+
+  .card-imageContainer {
+    position: relative;
+    img {
+      width: 100%;
+    }
+
+    button {
+      position: absolute;
+      top: 80%;
+      left: 10px;
+      z-index: 2;
+      background-color: var(--black);
+      color: var(--white);
+      padding: 15px 25px;
+      border: none;
+      border-radius: 5px;
+      opacity: 0;
+      transition: opacity 300ms;
+      font-family: var(--font-family2);
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8 !important;
+      }
+    }
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    h4 {
+      color: #808080;
+      font-weight: 500;
+    }
+
+    .card-model-name {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--black);
+      h3 {
+        font-family: var(--font-family1);
+      }
+    }
+
+    .card-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--black);
+
+      .card-info-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  &:hover {
+    background-color: var(--black);
+    color: var(--white);
+
+    button {
+      opacity: 1;
+    }
+
+    h4 {
+      color: var(--white);
+    }
+
+    .card-model-name {
+      color: var(--white);
+    }
+
+    .card-info {
+      color: var(--white);
+    }
+  }
+}

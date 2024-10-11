@@ -1,0 +1,64 @@
+.marketing-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 9rem !important;
+    gap: 5rem;
+
+    @media(max-width:1000px){
+        flex-direction: column;
+
+    }
+
+    .marketing-first{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+        width: 60%;
+        @media(min-width:1001px){
+           margin-left: 4rem;
+        }
+        @media(max-width:1000px){
+            width: 100%;
+        }
+
+
+        h1{
+            font-family: var(--font-family1);
+            font-size: clamp(2.5rem, 2.4528rem + 1.8519vw, 4.375rem);
+            color: var(--black);
+        }
+
+        p{
+            font-family: var(--font-family2);
+            line-height: 2rem;
+            font-weight: 500;
+            font-size: clamp(0.9625rem, 0.0156rem + 1.75vw, 1rem);
+            max-width: 810px;
+        }
+        
+        .marketing-stats{
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 5rem;
+            flex-wrap: wrap;
+
+            h2{
+                font-family: var(--font-family1);
+                font-size: clamp(1.125rem, 0.9282rem + 1.0494vw, 2.1875rem);
+                color: #808080;
+            }
+        }
+    }
+
+    .marketing-second{
+      
+        @media(max-width:1000px){
+            margin: 0 auto;
+        }
+
+    }
+}

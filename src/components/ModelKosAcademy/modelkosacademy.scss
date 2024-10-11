@@ -1,0 +1,126 @@
+.modelkosacademy-container {
+  background-image: url(../../assets/modelkosAcademyBackground.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 80vh;
+
+  .swiper-pagination-bullet {
+    background-color: #dadada;
+    opacity: 1;
+    width: 11px !important;
+    height: 11px !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: var(--white);
+    opacity: 1;
+    width: 13px !important;
+    height: 13px !important;
+
+  }
+
+  .modelkosacademy-title {
+    position: absolute;
+    text-align: center;
+    left: 10%;
+
+    h1 {
+      color: var(--white);
+      opacity: 0.3;
+      font-family: var(--font-family1);
+      font-size: clamp(3.5625rem, -0.3438rem + 12.5vw, 6.6875rem);
+    }
+  }
+
+  .mySwiper {
+    height: 90%;
+
+    .academySlide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 30px;
+
+      .academySlide-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+        h1 {
+          font-family: var(--font-family1);
+          color: var(--white);
+          margin-bottom: 10px;
+          font-size: clamp(1.6rem, 1.1rem + 1.6vw, 2rem);
+        }
+      }
+      p {
+        font-family: var(--font-family2);
+        color: var(--white);
+        text-align: center;
+        width: 80%;
+        font-size: clamp(0.75rem, 0.4375rem + 1vw, 1rem);
+      }
+
+      button {
+        background-color: var(--white);
+        color: var(--black);
+        font-size: clamp(0.6rem, 0.5444rem + 0.2963vw, 0.9rem);
+        font-family: var(--font-family2);
+        border: none;
+        outline: none;
+        padding: 15px 40px;
+        border-radius: 5px;
+        transition: 300ms;
+        cursor: pointer;
+        margin: 0 auto;
+        margin: 20px auto 0;
+        display: block;
+
+        &:hover {
+          opacity: 0.9;
+        }
+        @media (max-width: 1000px) {
+          padding: 10px 30px;
+        }
+
+        @media (max-width: 466px) {
+          padding: 8px 20px;
+        }
+      }
+    }
+  }
+
+  .custom-prev,
+  .custom-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+    background-color: var(--white);
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  .custom-prev {
+    left: 0px;
+  }
+
+  .custom-next {
+    right: 0px;
+  }
+
+  .custom-prev img,
+  .custom-next img {
+    width: 20px;
+    height: auto;
+  }
+}

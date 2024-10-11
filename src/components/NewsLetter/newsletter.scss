@@ -1,0 +1,86 @@
+.newsletter-container{
+    background-image: url(../../assets/background-line.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+   
+
+    h1{
+        font-family: var(--font-family1);
+        color: var(--black);
+        font-size: clamp(1.5rem, 1.2222rem + 1.4815vw, 3rem);
+        text-align: center;
+    }
+
+    p{
+        font-family: var(--font-family2);
+        color: var(--black);
+        font-size: clamp(0.75rem, 0.7037rem + 0.2469vw, 1rem);
+        text-align: center;
+    }
+
+    .newsletter-form{
+        display: flex;
+        align-items: center;
+        border: 1px solid #BBBBBB;
+        border-radius: 10px;
+        justify-content: space-between;
+        width: 50%;
+        .newsletter-input{
+            padding: 19px 0px 18.5px 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            svg{
+                font-size: clamp(1rem, 0.7037rem + 0.5469vw, 1.5rem);
+            }
+            
+            input{
+                background-color: var(--white);
+                border: none;
+                outline: none;
+                font-size: clamp(0.75rem, 0.7037rem + 0.2469vw, 1rem);
+                font-family: var(--font-family2);
+            }
+        }
+
+        button{
+            background-color: var(--black);
+            color: var(--white);
+            font-family: var(--font-family2);
+            font-size: clamp(0.75rem, 0.7037rem + 0.2469vw, 1rem);
+            border: none;
+            outline: none;
+            padding: 20px 30px;
+            border-radius: 10px;
+        }
+    }
+}
+
+@media(max-width:700px){
+    .newsletter-form{
+        width: 100% !important;
+
+        .newsletter-input{
+            padding: 14px 0px 14px 20px !important;
+
+            input{
+                width: 100%;
+            }
+        }
+    }
+
+    .newsletter-container{
+        button{
+            padding: 15px 25px !important;
+        }
+    }
+
+}

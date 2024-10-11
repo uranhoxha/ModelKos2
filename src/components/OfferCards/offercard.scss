@@ -1,0 +1,86 @@
+.offercard-container {
+  background-color: var(--white);
+  border: 1px solid #c1c1c1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0 !important;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 30px;
+  transition: 300ms;
+  cursor: pointer;
+  margin-bottom: 2.5rem;
+  position: relative;
+  height: 320px;
+  padding-top: 2rem !important;
+  margin-right: 10px;
+
+  .offercard-title {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+
+    img {
+      filter: invert(63%) sepia(0%) saturate(797%) hue-rotate(169deg)
+        brightness(80%) contrast(80%);
+    }
+
+    h3 {
+      font-family: var(--font-family1);
+      font-size: clamp(1.25rem, 0.9028rem + 1.8519vw, 3.125rem);
+      color: var(--white);
+      opacity: 0.5;
+      position: absolute;
+      top: 1%;
+      right: 5%;
+    }
+  }
+
+  h3 {
+    font-family: var(--font-family1);
+    color: var(--black);
+    transition: 300ms;
+    font-size: clamp(0.75rem, 0.6343rem + 0.6173vw, 1.375rem);
+  }
+
+  p {
+    font-family: var(--font-family2);
+    color: var(--black);
+    transition: 300ms;
+    font-size: clamp(0.5625rem, 0.4931rem + 0.3704vw, 0.9375rem);
+  }
+
+  .learn-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    columns: var(--black);
+    gap: 10px;
+  }
+
+  &:hover {
+    background-image: url(../../assets/background-image2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .offercard-title {
+      img {
+        filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(164deg)
+          brightness(95%) contrast(103%);
+      }
+    }
+
+    h3 {
+      color: var(--white);
+    }
+
+    p {
+      color: var(--white);
+    }
+    svg {
+      color: var(--white);
+    }
+  }
+}
